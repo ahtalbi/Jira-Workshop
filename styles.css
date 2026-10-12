@@ -88,3 +88,42 @@ img {
     padding-left: var(--space-s);
     padding-right: var(--space-s);
 }
+
+
+/* HERO (Mohamed Bouhadi) */
+ 
+.hero {
+  padding: var(--space-l) 0 var(--space-xl);
+  background-color: var(--color-mint);
+}
+ 
+/* two columns: text left, globe right */
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-m);
+  align-items: center;
+}
+
+.hero-title {
+  font-weight: 400;
+}
+ 
+.hero-subtitle {
+  margin-bottom: var(--space-m);
+  font-size: 16px;
+}
+ 
+.hero-image {
+  width: 100%;
+  max-width: 480px;
+  margin-left: auto;
+}
+
+.hero-inner .btn {
+    text-decoration: none;
+    padding: 10px 12px;
+    background-color: var(--color-forest);
+    color: var(--color-white);
+    border-radius: 25px;
+}
