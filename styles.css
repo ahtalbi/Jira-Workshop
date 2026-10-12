@@ -215,6 +215,42 @@ footer .right-container p {
 
 /* --------- END HEADER + FOOTER -------- */
 
+/* ------- START SERVICES INTRO --------- */
+.services-intro {
+    height: 60vh;
+    background: var(--color-cloud);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.services-intro p {
+    font-weight: 400;
+}
+
+.services-intro h2 {
+    font-size: bold;
+    font-family: var(--font-heading);
+    font-weight: 400;
+}
+
+.services-intro .button-schedule-a-call {
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: var(--color-forest);
+    color: var(--color-cloud);
+    transition: all 0.2s ease;
+}
+
+.services-intro .button-schedule-a-call:hover {
+    color: var(--color-forest);
+    background-color: var(--color-mist);
+    cursor: pointer;
+}
+/* --------- END SERVICES INTRO --------- */
+
 
 /* HERO (Mohamed Bouhadi) */
  
