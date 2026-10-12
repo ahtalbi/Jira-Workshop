@@ -20,7 +20,9 @@
     /* spacing */
     --space-xs: 8px;
     --space-s: 16px;
+    --space-ss: 20px;
     --space-m: 32px;
+    --space-ml: 42px;
     --space-l: 64px;
     --space-xl: 96px;
 
@@ -139,7 +141,7 @@ footer {
     background-color: var(--color-forest);
     height: 350px;
     display: flex;
-    padding: var(--space-s);
+    padding: var(--space-m);
     justify-content: space-between;
     align-items: center;
     gap: var(--space-m);
@@ -212,11 +214,110 @@ footer .right-container .navbar a {
 footer .right-container p {
     color: var(--color-cloud);
 }
-
 /* --------- END HEADER + FOOTER -------- */
 
+/* ------- START SERVICES INTRO --------- */
+.services-intro {
+    height: 60vh;
+    background: var(--color-cloud);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
 
-/* START HERO (Mohamed Bouhadi) */
+.services-intro p {
+    font-weight: 400;
+}
+
+.services-intro h2 {
+    font-size: bold;
+    font-family: var(--font-heading);
+    font-weight: 400;
+}
+
+.services-intro .button-schedule-a-call {
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: var(--color-forest);
+    color: var(--color-cloud);
+    transition: all 0.2s ease;
+}
+
+.services-intro .button-schedule-a-call:hover {
+    color: var(--color-forest);
+    background-color: var(--color-mist);
+    cursor: pointer;
+}
+/* --------- END SERVICES INTRO --------- */
+
+/* --------- START SERVICES ------------- */
+.services {
+    height: fit-content;
+    background: var(--color-cloud);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 4vh;
+    padding-block: var(--space-xl);
+    padding-inline: var(--space-l);
+}
+
+.services .card {
+    background-color: var(--color-mist);
+    width: 70%;
+    height: 427px;
+    display: flex;
+    align-items: center;
+    border-radius: var(--space-ss);
+}
+
+.services .card2 {
+    align-self: flex-end;
+    padding-left: var(--space-ml);
+}
+
+.services .card3 img {
+    height: 350px;
+    width: auto;
+    margin: 50px;
+}
+
+.services .card img {
+    height: 90%;
+    width: auto;
+}
+
+.services .card .informations {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8%;
+    border-radius: var(--space-ss);
+}
+
+.services .card .informations .infos {
+    display: flex;
+    gap: 10px;
+}
+
+.services .card .informations .infos .info-btn {
+    width: fit-content;
+    padding: var(--space-xs) var(--space-s);
+    background-color: var(--color-cloud);
+    border-radius: var(--space-xs);
+    transition: all 0.2s ease;
+}
+
+.services .card .informations .infos .info-btn:hover {
+    background-color: var(--color-mist);
+    cursor: crosshair;
+}
+/* ----------- END SERVICES ------------- */
+/* HERO (Mohamed Bouhadi) */
  
 .hero {
   padding: var(--space-l) 0 var(--space-xl);
