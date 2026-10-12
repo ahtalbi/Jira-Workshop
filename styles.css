@@ -34,6 +34,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border-color: 1px red solid;
 }
 
 body {
@@ -42,7 +43,7 @@ body {
     font-weight: 400;
     line-height: 1.6;
     color: var(--color-forest);
-    background-color: var(--color-cloud);
+    background-color: var(--color-mint);
 }
 
 h1,
@@ -88,3 +89,46 @@ img {
     padding-left: var(--space-s);
     padding-right: var(--space-s);
 }
+
+a {
+    color: var(--color-forest);
+}
+
+/* ------- START HEADER + FOOTER -------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-s) var(--space-m);
+}
+
+header .logo {
+    height: 20px;
+    width: auto;
+}
+
+header .navbar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+header .navbar a {
+    text-decoration: none;
+}
+
+header .navbar .button-book {
+    color: var(--color-cloud);
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: var(--color-forest);
+}
+
+header .navbar .button-book:hover {
+    color: var(--color-forest);
+    background-color: var(--color-cloud);
+}
+
+/* --------- END HEADER + FOOTER -------- */
