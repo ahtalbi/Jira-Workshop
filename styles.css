@@ -360,8 +360,7 @@ footer .right-container p {
 /* START PHOTO BANNER (Mohamed Bouhadi) */
  
 .banner {
-    min-height: 480px;
-    margin-top: var(--space-l);
+    min-height: 700px;
     background-image: url("assets/Cover-Image.png");
     background-position: center;
     background-size: cover;
@@ -372,6 +371,7 @@ footer .right-container p {
     display: flex;
     text-align: center;
     align-items: center;
+    justify-content: center;
 }
 
 .banner::before {
