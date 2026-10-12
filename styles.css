@@ -89,11 +89,9 @@ img {
     padding-left: var(--space-s);
     padding-right: var(--space-s);
 }
-
 a {
     color: var(--color-forest);
 }
-
 
 /* ------- START HEADER + FOOTER -------- */
 
