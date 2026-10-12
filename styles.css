@@ -34,6 +34,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border-color: 1px red solid;
 }
 
 body {
@@ -42,7 +43,7 @@ body {
     font-weight: 400;
     line-height: 1.6;
     color: var(--color-forest);
-    background-color: var(--color-cloud);
+    background-color: var(--color-mint);
 }
 
 h1,
@@ -88,6 +89,131 @@ img {
     padding-left: var(--space-s);
     padding-right: var(--space-s);
 }
+a {
+    color: var(--color-forest);
+}
+
+/* ------- START HEADER + FOOTER -------- */
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-s) var(--space-m);
+}
+
+header .logo {
+    height: 20px;
+    width: auto;
+}
+
+header .navbar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+header .navbar a {
+    text-decoration: none;
+}
+
+header .navbar .button-book {
+    color: var(--color-cloud);
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: var(--color-forest);
+    transition: all 0.2s ease;
+}
+
+header .navbar .button-book:hover {
+    color: var(--color-forest);
+    background-color: var(--color-cloud);
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-forest);
+    height: 350px;
+    display: flex;
+    padding: var(--space-s);
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-m);
+}
+
+footer .left-container {
+    width: 50%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+footer .left-container .logo {
+    height: 20px;
+    width: auto;
+}
+
+footer .left-container p{
+    color: var(--color-cloud);
+}
+
+footer .left-container .navbar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .left-container .navbar a {
+    text-decoration: none;
+}
+
+footer .right-container {
+    width: 50%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .right-container .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .right-container .navbar .button-book {
+    color: var(--color-forest);
+    padding: 10px 15px;
+    border-radius: 50px;
+    width: fit-content;
+    background-color: var(--color-cloud);
+    transition: all 0.2s ease;
+}
+
+footer .right-container .navbar .button-book:hover {
+    color: var(--color-cloud);
+    background-color: var(--color-forest);
+    cursor: pointer;
+}
+
+footer .right-container .navbar a {
+    text-decoration: none;
+    color: var(--color-cloud);
+}
+
+footer .right-container p {
+    color: var(--color-cloud);
+}
+
+/* --------- END HEADER + FOOTER -------- */
 
 
 /* HERO (Mohamed Bouhadi) */
