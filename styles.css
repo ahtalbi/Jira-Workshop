@@ -354,3 +354,85 @@ footer .right-container p {
     color: var(--color-white);
     border-radius: 25px;
 }
+
+/* --------- END HERO -------- */
+
+/* START PHOTO BANNER (Mohamed Bouhadi) */
+ 
+.banner {
+    min-height: 480px;
+    margin-top: var(--space-l);
+    background-image: url("assets/Cover-Image.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--color-banner-fallback);
+    position: relative;
+    color: var(--color-cloud);
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.445);
+}
+
+/* --------- END PHOTO BANNER -------- */
+
+
+/* START AUDIENCE (Mohamed Bouhadi) */
+
+.audience {
+    padding: var(--space-xl) 0;
+    background-color: var(--color-cloud);
+    color: var(--color-forest);
+}
+
+.audience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-l);
+    margin-bottom: var(--space-xl);
+}
+
+.audience-title {
+    max-width: 460px;
+}
+
+.audience-intro {
+    max-width: 440px;
+}
+
+.audience-grid {
+    display: flex;
+    gap: var(--space-m);
+}
+
+.audience-item {
+    flex: 1;
+    padding: var(--space-m) 0 var(--space-m) var(--space-s);
+    border-left: 1px solid var(--color-forest);
+    padding-inline: 40px;
+}
+
+.audience-icon {
+    margin-bottom: var(--space-l);
+    font-size: 24px;
+}
+
+.audience-item-subtitle {
+    margin-bottom: var(--space-s);
+    font-family: var(--font-text);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* END AUDIENCE */
