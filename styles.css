@@ -284,3 +284,54 @@ footer .right-container p {
 }
 
 /* --------- END PHOTO BANNER -------- */
+
+
+/* START AUDIENCE (Mohamed Bouhadi) */
+
+.audience {
+    padding: var(--space-xl) 0;
+    background-color: var(--color-cloud);
+    color: var(--color-forest);
+}
+
+.audience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-l);
+    margin-bottom: var(--space-xl);
+}
+
+.audience-title {
+    max-width: 460px;
+}
+
+.audience-intro {
+    max-width: 440px;
+}
+
+.audience-grid {
+    display: flex;
+    gap: var(--space-m);
+}
+
+.audience-item {
+    flex: 1;
+    padding: var(--space-m) 0 var(--space-m) var(--space-s);
+    border-left: 1px solid var(--color-forest);
+    padding-inline: 40px;
+}
+
+.audience-icon {
+    margin-bottom: var(--space-l);
+    font-size: 24px;
+}
+
+.audience-item-subtitle {
+    margin-bottom: var(--space-s);
+    font-family: var(--font-text);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* END AUDIENCE */
