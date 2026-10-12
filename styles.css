@@ -5,7 +5,7 @@
     --color-mint-soft: #D2F8DC; /* service cards */
     --color-cloud: #F9F9F9; /* page background */
     --color-white: #FFFFFF; /* chips, light buttons */
-    
+
     /* extra colours */
     --color-mist: #D7FFE6; /* feature panel */
     --color-peach: #FBD4AB; /* illustrations only */
@@ -318,12 +318,12 @@ footer .right-container p {
 }
 /* ----------- END SERVICES ------------- */
 /* HERO (Mohamed Bouhadi) */
- 
+
 .hero {
   padding: var(--space-l) 0 var(--space-xl);
   background-color: var(--color-mint);
 }
- 
+
 /* two columns: text left, globe right */
 .hero-inner {
   display: grid;
@@ -335,12 +335,12 @@ footer .right-container p {
 .hero-title {
   font-weight: 400;
 }
- 
+
 .hero-subtitle {
   margin-bottom: var(--space-m);
   font-size: 16px;
 }
- 
+
 .hero-image {
   width: 100%;
   max-width: 480px;
@@ -358,7 +358,7 @@ footer .right-container p {
 /* --------- END HERO -------- */
 
 /* START PHOTO BANNER (Mohamed Bouhadi) */
- 
+
 .banner {
     min-height: 700px;
     background-image: url("assets/Cover-Image.png");
@@ -436,3 +436,131 @@ footer .right-container p {
 }
 
 /* END AUDIENCE */
+
+/* START CUSTOM PLAN (Baha-eddine) */
+.plan {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-s);
+    padding: var(--space-xl) var(--space-m);
+    background-color: var(--color-cloud);
+}
+
+.plan-card {
+    min-height: 427px;
+    border-radius: var(--radius-card);
+}
+
+.plan-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: var(--space-l);
+    color: var(--color-cloud);
+    background-color: var(--color-forest);
+}
+
+.plan-title {
+    max-width: 600px;
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 400;
+}
+
+.plan-description {
+    max-width: 600px;
+    margin-bottom: var(--space-m);
+}
+
+.plan-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    border-radius: var(--radius-pill);
+    color: var(--color-forest);
+    background-color: var(--color-white);
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.plan-button:hover {
+    color: var(--color-forest);
+    background-color: var(--color-mist);
+}
+
+.plan-visual {
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    padding: var(--space-m);
+    background-color: var(--color-mist);
+}
+
+.plan-visual img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+/* END CUSTOM PLAN */
+
+/* START FINAL CTA (Baha-eddine) */
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-m);
+    padding: 160px var(--space-m);
+    color: var(--color-forest);
+    background-color: var(--color-cloud);
+    text-align: center;
+}
+
+.cta-title {
+    max-width: 950px;
+    margin-bottom: 0;
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 400;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    border-radius: var(--radius-pill);
+    color: var(--color-cloud);
+    background-color: var(--color-forest);
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.cta-button:hover {
+    color: var(--color-forest);
+    background-color: var(--color-mist);
+}
+/* END FINAL CTA */
+
+@media (max-width: 760px) {
+    .plan {
+        grid-template-columns: 1fr;
+        padding: var(--space-l) var(--space-s);
+    }
+
+    .plan-copy {
+        padding: var(--space-m);
+    }
+
+    .plan-visual {
+        min-height: 320px;
+    }
+
+    .cta {
+        padding: var(--space-xl) var(--space-s);
+    }
+
+    .cta-title {
+        font-size: clamp(2rem, 8vw, 2.5rem);
+    }
+}
